@@ -13,19 +13,26 @@
 
 		<script>
 				sap.ui.getCore().attachInit(function(){
+					
+					
+					
 					var app = new sap.m.App("HelloWorld",{
-						initialPage:"page1"
+						initialPage:"page1",
 					});
 					
 					var page1 = new sap.m.Page("page1",{
 						title:"Hello World",
 						showNavButton:false,
-						content: new sap.m.Button({
+						content: [new sap.m.Button({
 							text:"Go to page2",
 							press:function(){
 								app.to("page2")
 							}
-						})
+						}),
+						new sap.m.Text({
+							text:"Hi, my name is SAPUI5"
+							})]
+
 					});
 					
 					var page2 = new sap.m.Page("page2",{
