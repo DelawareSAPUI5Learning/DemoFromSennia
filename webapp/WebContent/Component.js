@@ -2,8 +2,8 @@ sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/model/json/JSONModel",
 	//19.
-	"sap/ui/demo/wt/controller/HelloDialog",
-	"sap/ui/model/odata/v2/ODataModel"
+	"sap/ui/demo/wt/controller/HelloDialog"
+//27.	"sap/ui/model/odata/v2/ODataModel"
 	//10.
 //	"sap/ui/model/resource/ResourceModel"
 	],function(UIComponent,JSONModel,HelloDialog,ODataModel){
@@ -27,16 +27,19 @@ sap.ui.define([
 				var oModel = new JSONModel(oData);
 				this.setModel(oModel);
 				
-				//set invoice model-local	
-				var oConfig = this.getMetadata().getConfig();
-				var sNamespace = this.getMetadata().getManifestEntry("sap.app").id;
-				var oInvoiceModel = new JSONModel(jQuery.sap.getModulePath(sNamespace,oConfig.invoiceLocal));
-				this.setModel(oInvoiceModel,"invoice");
-//26.				
-				//set invoice model-remote
-				var oConfig = this.getMetadata().getConfig();
-				var oInvoiceModel = new ODataModel(oConfig.invoiceRemote);
-				this.setModel(oInvoiceModel,"invoice");
+//27.				//set invoice model-local	
+//				var oConfig = this.getMetadata().getConfig();
+//				var sNamespace = this.getMetadata().getManifestEntry("sap.app").id;
+//				var oInvoiceModel = new JSONModel(jQuery.sap.getModulePath(sNamespace,oConfig.invoiceLocal));
+//				this.setModel(oInvoiceModel,"invoice");
+////26.				
+//				//set invoice model-remote
+//				var oConfig = this.getMetadata().getConfig();
+//				var oInvoiceModel = new ODataModel(oConfig.invoiceRemote);
+//				this.setModel(oInvoiceModel,"invoice");
+				
+				//disable batch grouping for v2 API of the northwind service
+				this.getModel("invoice").setUseBatch(false);
 				
 				//set dialog
 				this.helloDialog = new HelloDialog();
