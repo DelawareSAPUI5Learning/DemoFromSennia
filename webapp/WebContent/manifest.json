@@ -33,14 +33,18 @@
 		"sap.m": {}
 	  }
 	},
+	"config":{
+		"invoiceLocal":"/Invoices.json",
+		"invoiceRemote":"proxy/http/services.odata.org/V3/Northwind/Northwind.svc/"
+		
+	},
 	"models": {
 	  "i18n": {
 		"type": "sap.ui.model.resource.ResourceModel",
 		"settings": {
 		  "bundleName": "sap.ui.demo.wt.i18n.i18n"
-		}
-	  }
-	},
+		}}
+	  },
 	"resources":{
 		"css":[
 			{

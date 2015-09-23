@@ -5,11 +5,12 @@
 
 	<Panel 
 		headerText="{i18n>helloPanelTitle}" 
-		class="sapUiResponseiveMargin"
+		class="sapUiResponsiveMargin"
 		width="auto">
 		<content>
 			
 			<Button
+				icon="sap-icon://world"
 				text="{i18n>openDialogButtonText}"
 				press="onOpenDialog"
 				class="sapUiSmallMarginEnd"/>

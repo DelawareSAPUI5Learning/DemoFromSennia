@@ -1,9 +1,12 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
-	"sap/ui/model/json/JSONModel"
+	"sap/ui/model/json/JSONModel",
+	//19.
+	"sap/ui/demo/wt/controller/HelloDialog",
+	"sap/ui/model/odata/v2/ODataModel"
 	//10.
 //	"sap/ui/model/resource/ResourceModel"
-	],function(UIComponent,JSONModel,ResourceModel){
+	],function(UIComponent,JSONModel,HelloDialog,ODataModel){
 		"use strict";
 		
 		return UIComponent.extend("sap.ui.demo.wt.Component",{
@@ -18,11 +21,25 @@ sap.ui.define([
 				//set data model
 				var oData = {
 						recipient:{
-							name:"World!!!"
+							name:"World"
 						}
 				};
 				var oModel = new JSONModel(oData);
 				this.setModel(oModel);
+				
+				//set invoice model-local	
+				var oConfig = this.getMetadata().getConfig();
+				var sNamespace = this.getMetadata().getManifestEntry("sap.app").id;
+				var oInvoiceModel = new JSONModel(jQuery.sap.getModulePath(sNamespace,oConfig.invoiceLocal));
+				this.setModel(oInvoiceModel,"invoice");
+//26.				
+				//set invoice model-remote
+				var oConfig = this.getMetadata().getConfig();
+				var oInvoiceModel = new ODataModel(oConfig.invoiceRemote);
+				this.setModel(oInvoiceModel,"invoice");
+				
+				//set dialog
+				this.helloDialog = new HelloDialog();
 				
 				//set i18n model on view
 //				var i18nModel = new ResourceModel({
