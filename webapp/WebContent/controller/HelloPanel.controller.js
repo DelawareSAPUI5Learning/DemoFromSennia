@@ -5,7 +5,7 @@ sap.ui.define([
 		"use strict";
 		
 		return Controller.extend("sap.ui.demo.wt.controller.HelloPanel",{
-			
+//15.开始，			
 			onShowHello: function(){
 				//read msg from i8n model
 				var oBundle = this.getView().getModel("i18n").getResourceBundle();
@@ -14,10 +14,11 @@ sap.ui.define([
 				//show message
 				MessageToast.show(sMsg);
 			},
+//19.			
 			onOpenDialog:function(){
 				this.getOwnerComponent().helloDialog.open(this.getView());
 			}
-//21.			
+//16-18.			
 //			_getDialog:function(){
 //				if(!this._oDialog){
 //					//create dialog via frament factory
@@ -30,6 +31,7 @@ sap.ui.define([
 //			onOpenDialog:function(){
 //				this._getDialog().open();
 //			},
+//17-18.			
 //			onCloseDialog:function(){
 //				this._getDialog().close();
 //			}

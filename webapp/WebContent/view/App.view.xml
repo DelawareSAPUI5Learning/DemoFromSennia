@@ -3,7 +3,78 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc" 
 	displayBlock="true">
+<!--4. 	<Text text="Hello World"/> -->
+<!--5-7. 	
+		<Button
+			text="Say Hello"
+ 			press="onShowHello"/> 
+8-10.新添加i18n文件，定义一些常量，{}方式取得值
+ 		<Button
+			text="{i18n>showHelloButtonText}"
+ 			press="onShowHello"/> 	
+7-10. 		
+		<Input
+			value="{/recipient/name}"
+			description="Hello {/recipient/name}"
+			valueLiveUpdate="true"
+			width="60%" />	
+-->
+<!--11.把以上的东西都整合到一个容器中 
+	<App>
+		<pages>
+			<Page title="{i18n>homePageTitle}">
+				<content>
+					<Panel
+						headerText="{i18n>helloPanelTitle}">
+						<content>
+							<Button
+								text="{i18n>showHelloButtonText}"
+								press="onShowHello" />
+							<Input
+								value="{/recipient/name}"
+								description="Hello {/recipient/name}"
+								valueLiveUpdate="true"
+								width="60%" />
+						</content>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+ -->
+ 
+<!--13.14.添加类从而添加CSS样式  ,14步加了style.css文件，在manifest.json中配置
+<App class="sapUiDemoWT">
+		<pages>
+			<Page title="{i18n>homePageTitle}">
+				<content>
+					<Panel
+						headerText="{i18n>helloPanelTitle}"
+						class="sapUiResponsiveMargin"
+						width="auto">
+						<content>
+							<Button
+								text="{i18n>showHelloButtonText}"
+								press="onShowHello"
+								class="myCustomButton"/>
+							<Input
+								value="{/recipient/name}"
+								valueLiveUpdate="true"
+								width="60%"/>
+							<Text
+								text="Hello {/recipient/name}"
+								class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+						</content>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
 
+ -->
+<!-- 15.开始把页面分离出去，新建HelloPanel.view.xml&controller 
+	到31步，移到Overview中-->
+<!--  
 	<App class="sapUiDemoWT">
 		<pages>
 			<Page title="{i18n>homePageTitle}">
@@ -19,5 +90,6 @@
 			</Page>
 		</pages>
 	</App>
-
+-->
+	<App class="sapUiDemoWT" id="app"/>
 </mvc:View> 

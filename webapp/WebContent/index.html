@@ -10,7 +10,9 @@
 				src="resources/sap-ui-core.js"
 				data-sap-ui-theme="sap_bluecrystal"
 				data-sap-ui-libs="sap.m"
+				
 				data-sap-ui-bindingSyntax="complex"
+				
 				data-sap-ui-compatVesion="edge"
 				data-sap-ui-preload="async"
 				data-sap-ui-resourceroots='{
@@ -18,25 +20,26 @@
 				}'>
 		</script>
 		
-		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+		<!-- 第7步加入数据绑定 -->
  
 		<script>
 		
 				sap.ui.getCore().attachInit(function(){
-					
+//3.在页面上显示内容					
 //					new sap.m.Text({
 //						text:"Hello World"
 //					}).placeAt("content");
-
+//4-8.通过xmlView显示内容
 //					new sap.ui.xmlview({
 //						viewName:"sap.ui.demo.wt.view.App"
 //					}).placeAt("content");
-
+//9-11.新Component.js文件时，重新定义容器
 //					new sap.ui.core.ComponentContainer({
 //						name:"sap.ui.demo.wt",
 //						height:"100%"
 //					}).placeAt("content");
-//12.					
+
+//12-.用Shell容器替换					
 					new sap.m.Shell({
 						app:new sap.ui.core.ComponentContainer({
 							name:"sap.ui.demo.wt",

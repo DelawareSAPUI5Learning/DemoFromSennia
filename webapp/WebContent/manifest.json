@@ -42,7 +42,10 @@
 		"sap.m": {}
 	  }
 	},
-	
+	"config": {
+	  "invoiceLocal": "/Invoices.json",
+	  "invoiceRemote": "proxy/http/services.odata.org/V3/Northwind/Northwind.svc/"
+	},
 	"models": {
 	  "i18n": {
 		"type": "sap.ui.model.resource.ResourceModel",
@@ -53,6 +56,35 @@
 	   "invoice":{
 	   		"dataSource":"invoiceRemote"
 	   }
+	},
+	"routing": {
+	  "config": {
+		"routerClass": "sap.m.routing.Router",
+		"viewType": "XML",
+		"viewPath": "sap.ui.demo.wt.view",
+		"controlId": "app",
+		"controlAggregation": "pages"
+	  },
+	  "routes": [
+		{
+		  "pattern": "",
+		  "name": "Overview",
+		  "target": "overview"
+		},
+		{
+		  "pattern": "detail/{invoicePath}",
+		  "name": "Detail",
+		  "target": "detail"
+		}
+	  ],
+	  "targets": {
+		"overview": {
+		  "viewName": "Overview"
+		},
+		"detail": {
+		  "viewName": "Detail"
+		}
+	  }
 	},
 	"resources":{
 		"css":[

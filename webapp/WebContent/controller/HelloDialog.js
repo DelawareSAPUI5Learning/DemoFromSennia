@@ -1,3 +1,4 @@
+//19.开始
 sap.ui.define([
     "sap/ui/base/Object"
 ],function(Object){
@@ -13,6 +14,10 @@ sap.ui.define([
 		},
 		open:function(oView){
 			var oDialog = this._getDialog();
+			
+//35.
+			//forward compact/cozy style into Dialog
+			jQuery.sap.syncStyleClass(oView.getController().getOwnerComponent().getContentDensityClass(),oView,oDialog);
 			//connect dialog to view(models,lifecycle)
 			oView.addDependent(oDialog);
 			
