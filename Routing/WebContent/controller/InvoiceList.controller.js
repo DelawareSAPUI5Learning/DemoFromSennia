@@ -30,8 +30,11 @@ sap.ui.define([
 			oBinding.filter(aFilter);
 		},
 		onPress:function(oEven){
+			var oItem = oEven.getSource();
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			oRouter.navTo("Detail");
+			oRouter.navTo("Detail",{
+				invoicePath : oItem.getBindingContext("invoice").getPath().substr(1)
+			});
 		}
 	});
 });

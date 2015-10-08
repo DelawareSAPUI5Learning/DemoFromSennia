@@ -1,0 +1,87 @@
+{
+			"results" : [ {
+				"__metadata" : {
+					"id" : "http://SCVWIS0423.dcsc.be:8100/sap/opu/odata/sap/ZIOT_SRV/WarehouseStateSet('')",
+					"uri" : "http://SCVWIS0423.dcsc.be:8100/sap/opu/odata/sap/ZIOT_SRV/WarehouseStateSet('')",
+					"type" : "ZIOT_SRV.WarehouseState"
+				},
+				"Dummykey" : "",
+				"ShipmentsToday" : "000000",
+				"ShipmentsPicked" : "000000",
+				"ShipmentsShipped" : "000000",
+				"WarehouseSize" : "005000",
+				"PalletsInWarehouse" : "000000",
+				"ShippingCapacity" : "000400",
+				"PalletsInShipping" : "000000",
+				"PickingLines" : "000000",
+				"LinesPicked" : "000000",
+				"LinesShipped" : "000000",
+				"NaWarehouseState" : {
+					"results" : [
+							{
+								"__metadata" : {
+									"id" : "http://SCVWIS0423.dcsc.be:8100/sap/opu/odata/sap/ZIOT_SRV/WarehouseStateDockSet('')",
+									"uri" : "http://SCVWIS0423.dcsc.be:8100/sap/opu/odata/sap/ZIOT_SRV/WarehouseStateDockSet('')",
+									"type" : "ZIOT_SRV.WarehouseStateDock"
+								},
+								"DummyKey" : "",
+								"Dock" : "DOCK 1",
+								"Shipment" : "1110",
+								"NumberPlate" : "",
+								"Carrier" : "C5205",
+								"Total" : "000007",
+								"TotalNotPicked" : "000004",
+								"TotalPicked" : "000002",
+								"TotalLoaded" : "000001"
+							},
+							{
+								"__metadata" : {
+									"id" : "http://SCVWIS0423.dcsc.be:8100/sap/opu/odata/sap/ZIOT_SRV/WarehouseStateDockSet('')",
+									"uri" : "http://SCVWIS0423.dcsc.be:8100/sap/opu/odata/sap/ZIOT_SRV/WarehouseStateDockSet('')",
+									"type" : "ZIOT_SRV.WarehouseStateDock"
+								},
+								"DummyKey" : "",
+								"Dock" : "DOCK 2",
+								"Shipment" : "",
+								"NumberPlate" : "",
+								"Carrier" : "",
+								"Total" : "000010",
+								"TotalNotPicked" : "000000",
+								"TotalPicked" : "00008",
+								"TotalLoaded" : "00002"
+							},
+							{
+								"__metadata" : {
+									"id" : "http://SCVWIS0423.dcsc.be:8100/sap/opu/odata/sap/ZIOT_SRV/WarehouseStateDockSet('')",
+									"uri" : "http://SCVWIS0423.dcsc.be:8100/sap/opu/odata/sap/ZIOT_SRV/WarehouseStateDockSet('')",
+									"type" : "ZIOT_SRV.WarehouseStateDock"
+								},
+								"DummyKey" : "",
+								"Dock" : "DOCK 3",
+								"Shipment" : "",
+								"NumberPlate" : "",
+								"Carrier" : "",
+								"Total" : "00008",
+								"TotalNotPicked" : "00003",
+								"TotalPicked" : "00003",
+								"TotalLoaded" : "00002"
+							},
+							{
+								"__metadata" : {
+									"id" : "http://SCVWIS0423.dcsc.be:8100/sap/opu/odata/sap/ZIOT_SRV/WarehouseStateDockSet('')",
+									"uri" : "http://SCVWIS0423.dcsc.be:8100/sap/opu/odata/sap/ZIOT_SRV/WarehouseStateDockSet('')",
+									"type" : "ZIOT_SRV.WarehouseStateDock"
+								},
+								"DummyKey" : "",
+								"Dock" : "DOCK 4",
+								"Shipment" : "",
+								"NumberPlate" : "",
+								"Carrier" : "",
+								"Total" : "000000",
+								"TotalNotPicked" : "000000",
+								"TotalPicked" : "000000",
+								"TotalLoaded" : "000000"
+							} ]
+				}
+			} ]
+		}

@@ -1,0 +1,107 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="warehouse.view.ware" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Warehouse" showHeader="false" class="ware">
+		<Label class="titleUp" text="Warehouse" textAlign="Center"
+			design="Bold" color="#FFFFFF" />
+		<HBox class="header">
+			<Image src="images/shippments.png" />
+			<Label text="12 Shipments Today" />
+			<Image src="images/shipped.png" />
+			<VBox class="sapUiSmallMargin">
+				<Label text="12 Picked" />
+				<Label text="asdf" />
+			</VBox>
+			<Image src="images/picked.png" />
+			<VBox class="sapUiSmallMargin">
+				<Label text="12 Shipped" />
+				<Label text="asdf" />
+			</VBox>
+		</HBox>
+		<HBox class="warehouse">
+			<VBox class="left sapUiSmallMarginBeginEnd">
+				<VBox class="up">
+					<Label class="title" text="WareHouse" />
+					<HBox>
+						<Image class="img" src="images/warehouse_logo.png" />
+						<VBox class="data">
+							<Label class="num" text="4202" />
+							<Label text="Pallet" />
+						</VBox>
+					</HBox>
+				</VBox>
+				<VBox class="down">
+					<Label class="title" text="Shipments Area" />
+					<HBox>
+						<Image class="img" src="images/shipping_logo.png" />
+						<VBox class="data">
+							<Label class="num" text="4202" />
+							<Label text="Pallet" />
+						</VBox>
+					</HBox>
+				</VBox>
+			</VBox>
+			<VBox class="rightPart sapUiSmallMarginBeginEnd">
+				<HBox class="right">
+					<VBox class="range">
+						<Label text="Dock 01" />
+						<HBox class="progress">
+							<HBox class="yellow"></HBox>
+							<HBox class="white"></HBox>
+							<HBox class="green"></HBox>
+						</HBox>
+					</VBox>
+					<Image src="images/scanner.png" />
+					<Image src="images/transportGrey.png" />
+				</HBox>
+				<HBox class="right">
+					<VBox class="range">
+						<Label text="Dock 01" />
+						<HBox class="progress">
+							<HBox class="yellow"></HBox>
+							<HBox class="white"></HBox>
+							<HBox class="green"></HBox>
+						</HBox>
+					</VBox>
+					<Image src="images/scanner.png" />
+					<Image src="images/transportGrey.png" />
+				</HBox>
+				<HBox class="right">
+					<VBox class="range">
+						<Label text="Dock 01" />
+						<HBox class="progress">
+							<HBox class="yellow"></HBox>
+							<HBox class="white"></HBox>
+							<HBox class="green"></HBox>
+						</HBox>
+					</VBox>
+					<Image src="images/scanner.png" />
+					<Image src="images/transportGrey.png" />
+				</HBox>
+				<HBox class="right">
+					<VBox class="range">
+						<Label text="Dock 01" />
+						<HBox class="progress">
+							<HBox class="yellow"></HBox>
+							<HBox class="white"></HBox>
+							<HBox class="green"></HBox>
+						</HBox>
+					</VBox>
+					<Image src="images/scanner.png" />
+					<Image src="images/transportGrey.png" />
+				</HBox>
+				<HBox class="right">
+					<VBox class="range">
+						<Label text="Dock 01" />
+						<HBox class="progress">
+							<HBox class="yellow"></HBox>
+							<HBox class="white"></HBox>
+							<HBox class="green"></HBox>
+						</HBox>
+					</VBox>
+					<Image src="images/scanner.png" />
+					<Image src="images/transportGrey.png" />
+				</HBox>
+			</VBox>
+		</HBox>
+	</Page>
+</mvc:View>
